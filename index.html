@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <style></style>
+  <title>Document</title>
+</head>
+
+
+
+<body>
+  <button onclick="uploadFile()" class="uploadButton">UPLOAD FILE</button>
+  <div id="fileInputFieldContainer" class="fileInputContainerHidden">
+  <input type="file"  id="fileInput" title="ksdjflk"/>
+</div>
+  <div class="parentContainer">
+    <div class="homeContentsContainer">
+      <div class="titleContainerClass">
+        <h1>Expence Tracker</h1>
+      </div>
+      <div class="dividerContainer">
+        <div class="horizontalLine"></div>
+      </div>
+      <div class="balanceContainerClass">
+        <div class="balanceTitleAndAmountContainer" id="balanceDiv">
+          <h2>BALANCE</h2>
+        </div>
+        <div class="dividerContainer">
+          <div class="verticalLine"></div>
+        </div>
+        <div id="balanceDivCont" class="addBalanceButton">
+          <button onclick="addIncomeForm()" class="balanceButton">+</button>
+        </div>
+      </div>
+      <div class="dividerContainer">
+        <div class="horizontalLine"></div>
+      </div>
+      <div class="amountClass">
+        <div id="incomeDiv">
+          <h2>INCOME</h2>
+        </div>
+        <div class="dividerContainer">
+          <div class="verticalLine"></div>
+        </div>
+        <div id="expenceDiv">
+          <h2>EXPENCE</h2>
+        </div>
+      </div>
+      <button class="signoutButton" onclick="signoutCurrentUser()">
+        Signout !
+      </button>
+      <div class="dividerContainer">
+        <div class="horizontalLine"></div>
+      </div>
+      <div class="transactionsAndNewTransactionsContainer">
+        <div class="transactinsContainer">
+          <h2 class="transactionsContainerTitle">Transactions History</h2>
+          <div class="transactionsDetails" id="transactionaDetailsContainer"> </div>
+        </div>
+        <div class="dividerContainer">
+          <div class="verticalLine"></div>
+        </div>
+        <div class="addNewTransactionDiv">
+          <h1 class="newTransactionTitle">Add New Transaction</h1>
+          <h3>Text</h3>
+          <input onclick="hideAddIncomeForm()" class="inputClass" type="text" id="trasactionText"
+            placeholder="Please enter the transaction details" />
+          <button onmouseenter="displayDownloadOptions()" class="downloadButton" onmousedown="hideDownloadOptions()">
+            DOWNLOAD </button>
+         <div id="csvAndTExtButtonsContainer" class="displayForDownloadButton">
+            <button id="downloadCSVFile" onclick="createCsvOrTextFile('csv')" class="displayForDownloadButton">
+            .CSV</button>
+          <button id="downloadTXTFile" onclick="createCsvOrTextFile('plain')" class="displayForDownloadButton">
+            .TXT</button>
+            </div>
+          <h3>Amount</h3>
+          <input onclick="hideAddIncomeForm()" class="inputClass" type="number" id="trasactionNumber"
+            placeholder="Please enter the transaction amount" />
+          <div id="alertMessage" class="displayOnAlert"></div>
+
+          <button class="amountUpdateButtonClass" onclick="addNewExpense()">Add Expence</button>
+        </div>
+        <div id="addIncomeForm" class="displayOnAlert">
+          <input id="transactionIncomeDetails" class="addIncomeFormInputClass" type="text"
+            placeholder="Please enter the transaction details">
+          <input id="transactionIncomeAmount" type="number" class="addIncomeFormInputClass" type="text"
+            placeholder="Please enter the transaction amount">
+          <div id="alertIncomeMessage" class="displayOnAlert"></div>
+
+          <button onclick="addIncomeButton()" class="addIncomeButtonClass">Add Income !</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>
