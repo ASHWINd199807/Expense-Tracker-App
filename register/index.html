@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="parentContainer">
+      <div class="titleAndFieldsContainer">
+        <div>
+          <h1 class="title">Expence Tracker</h1>
+        </div>
+        <div>
+          <h4 class="title">Register To Manage Your Expences!</h4>
+        </div>
+        <div class="fieldsOuterClass">
+          <div class="fieldsContainer">
+            <label class="labelClass" for="email" id="email">Email</label>
+            <div id="emailInputFIeldContainer">
+              <input
+                class="inputClass"
+                type="email"
+                id="emailInput"
+                type="email"
+                placeholder="Please Enter Email...."
+                name="email"
+              />
+            </div>
+            <label class="labelClass" for="email" id="password">Password</label>
+            <div id="passwordInputFIeldContainer">
+              <input
+                class="inputClass"
+                autocomplete="off"
+                id="passwordInput"
+                type="password"
+                placeholder="Please Enter Password...."
+                name="password"
+              />
+            </div>
+            <div id="alertMessage" class="displayOnAlert"></div>
+            <div class="redirectClass">
+              Have an account?
+              <a href="/login/index.html">Sign In!</a>
+            </div>
+            <button class="buttonClass" onclick="save()">Sign Up !</button>
+          </div>
+        </div>
+      </div>
+      <script src="registerScript.js"></script>
+    </div>
+  </body>
+</html>

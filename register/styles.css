@@ -1,0 +1,359 @@
+body {
+  
+  background: #fcf5e5; background-size: cover;
+  font-family: poppins;
+}
+.title {
+  font-family: poppins;
+  text-align: center;
+}
+.todoTitle {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.todoInnerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoInput {
+  height: 90px;
+  background: #ffe5b4;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin: auto;
+  border-radius: 20px;
+  font-family: poppins;
+}
+
+.todoButton {
+  border: 1px solid white;
+  color: black;
+  display: block;
+  margin-left: 20px;
+  height: 45px;
+  border-radius: 15px;
+  font-size: 25px;
+  background-color: #ffe5b4;
+  font-family: poppins;
+  padding: 0;
+  width: 20%;
+  height: 55%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #8e4585;
+  cursor: pointer;
+}
+
+.updateToDo {
+  height: "140px";
+  width: "220px";
+  border: "2px solid #FFE5B4";
+  display: "flex";
+  border-radius: "10px";
+  flex-direction: "column";
+  background-color: "white";
+}
+
+.buttonContainer {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.todoContent {
+  width: 30%;
+  text-align: start;
+  text-decoration: none;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  text-align: start;
+  width: 100%;
+  word-break: break-all;
+  font-size: 20px;
+  font-family: poppins;
+}
+
+.todoContentDone {
+  width: 30%;
+  text-align: start;
+  text-decoration: line-through;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  text-align: start;
+  width: 100%;
+  word-break: break-all;
+  font-size: 20px;
+  font-family: poppins;
+}
+
+.toDoBox {
+  margin: 0;
+  padding: 0;
+  width: 404px;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 800px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 6px;
+  border: 2px solid #ffe5b4;
+  display: flex;
+  flex-direction: row;
+}
+
+.toDoBoxDone {
+  margin: 0;
+  padding: 0;
+  width: 404px;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 800px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 6px;
+  border: 2px solid #ffe5b4;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffe5b4;
+}
+
+.toDoContainer {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.todoInputBox {
+  width: 60%;
+  height: 40%;
+  border-radius: 10px;
+  border: none;
+  padding: 6px 12px;
+}
+
+.todoListBox {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoBoxTitleContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.toDoTitle {
+  margin: auto;
+  font-family: poppins;
+}
+
+.inputEmpty {
+  color: #ffe5b4;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
+}
+
+.contentContainer {
+  width: 70%;
+  padding: 0px;
+}
+
+.todoButtonDiv {
+  padding: 0;
+  height: 40px;
+  width: 70px;
+  margin: auto;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #8e4585;
+  background-color: #ffe5b4;
+  font-family: poppins;
+  cursor: pointer;
+}
+
+.todoButtonDivDone {
+  padding: 0;
+  height: 40px;
+  width: 70px;
+  margin: auto;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #8e4585;
+  background-color: #ffe5b4;
+  font-family: poppins;
+  cursor: pointer;
+}
+
+.emptyWarning {
+  font-family: poppins;
+}
+
+.fieldsOuterClass {
+  padding: 0px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 20%;
+  align-self: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.inputClass {
+  display: block;
+  height: 30px;
+  margin: auto;
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  color: rgba(255, 127, 127);
+  font-size: 15px;
+}
+.redirectClass {
+  display: block;
+  height: 30px;
+  margin: auto;
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+}
+
+input.inputClass:focus {
+  border: 1px solid red;
+}
+.labelClass {
+  display: block;
+  height: 30px;
+  margin: auto;
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: poppins;
+  font-size: 20px;
+}
+.displayOnAlert {
+  display: none;
+}
+
+.displayAlertNow {
+  color: red;
+  text-align: center;
+}
+.buttonClass {
+  display: block;
+  height: 40px;
+  margin: auto;
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  font-family: poppins;
+}
+.parentContainer {
+  height: 98vh;
+  width: 98vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.titleAndFieldsContainer {
+  height: 98%;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.pageSubjectContainer {
+  display: flex;
+  justify-content: center;
+}
+.fieldsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+}
+.fieldsoOuterContainer {
+  padding: 0px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonClass:hover {
+  color: rgba(255, 127, 127);
+
+  background: #fcf5e5;
+
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.inputClass:active {
+  border: none;
+}
+input:focus {
+  outline: none !important;
+  border-color: rgba(255, 127, 127);
+  box-shadow: 0 0 10px rgba(255, 127, 127);
+}
